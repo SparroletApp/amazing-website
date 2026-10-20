@@ -1,0 +1,84 @@
+
+.certified-standard-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.certified-standard-heading h2 {
+    margin: 0 0 8px;
+    color: #123743;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+
+.certified-standard-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #8190a8;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+
+.green-cards {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.green-card {
+    min-width: 0;
+    padding:10px  25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #ffffff;
+    border: 1px solid #d1e7e8;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px rgba(13, 62, 67, 0.06);
+    box-sizing: border-box;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.green-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(13, 62, 67, 0.12);
+}
+
+.green-card-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #006b6b;
+    font-size: 27px;
+}
+
+.green-card-content {
+    text-align: center;
+}
+
+.green-card-content h3 {
+    margin: 0;
+    color: #103540;
+    font-size: 15px;
+    font-weight: 750;
+    line-height: 1.45;
+}
+
+.green-card-content p {
+    margin: 3px 0 0;
+    color: #7184a2;
+    font-size: 14px;
+    font-weight: 400;
+}
+

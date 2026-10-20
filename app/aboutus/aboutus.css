@@ -1,0 +1,182 @@
+.aboutus{
+    background-color: #F4F8F8;
+}
+
+.about-header{
+    background-color: #0A2E39;
+    padding: 30px;
+    color: white;
+}
+
+.about-first{
+    padding: 70px 0px;
+}
+
+.about-small{
+    font-size: 12px;
+    color: #E6F3F3;
+    letter-spacing: 0.07cm;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-header h1{
+    font-weight: 600;
+}
+
+.img-about-first{
+    height: 400px;
+}
+
+.img-about-first img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.about-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-first-right h6{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05cm;
+    margin-bottom: 12px;
+    color: #026666;
+}
+
+.shield-mark{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0A2E39;
+}
+
+.shield-desc{
+    color: #64748B;
+}
+
+.our-story{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+}
+
+.manager-img {
+    height: 300px;
+}
+
+.manager-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.our-story .row{
+display: flex;
+justify-content: space-between;
+}
+
+
+.manage-role{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-manager{
+    margin-top: 30px;
+    font-weight: 700;
+    color: #0A2E39;
+}
+
+.green-designation{
+    color: #026666;
+    font-weight: 700;
+}
+
+.meet-management .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.management-img{
+    height: 200px;
+}
+
+.management-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.management-card{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.management-info {
+    margin-top: 20px;
+}
+
+.meet-management .shield-mark{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.management-info h3{
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.management-info p{
+    text-align: center;
+    color: #026666;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.our-brands{
+    padding: 40px 0px;
+}
+
+.our-brands .shield-mark{
+    text-align: center;
+}
+
+.brand-desc{
+    text-align: center;
+    color: #64748B;
+}
+
+.amazing-data{
+    background-color: #b3d6d633;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 0.03cm;
+    color: #004D4D;
+    font-weight: 700;
+    border: 1px solid #02666633;
+}
+
+.list-datas{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
