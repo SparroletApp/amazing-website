@@ -1,0 +1,109 @@
+
+.landing-header {
+    width: 100%;
+    min-height: 74px;
+    padding: 0 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #f8fbfb;
+    position: relative;
+    z-index: 5;
+}
+
+.landing-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #007d91;
+    flex-shrink: 0;
+}
+
+.logo-icon {
+    color: #079ab0;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-text strong {
+    font-size: 20px;
+    line-height: 1;
+    font-style: italic;
+    letter-spacing: -0.8px;
+}
+
+.logo-text small {
+    margin-top: 3px;
+    font-size: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.landing-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.quote-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    background: #007f95;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 3px 10px rgba(0, 90, 110, 0.2);
+    transition: background 0.2s ease;
+}
+
+.quote-button:hover {
+    background: #006477;
+    color: #ffffff;
+}
+
+.landing-nav a {
+    color: #172a3a;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+.landing-nav a:hover,
+.landing-nav a.active {
+    color: #00899a;
+}
+
+.landing-logo img{
+   width: 145px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.landing-nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 2px;
+    background: #00899a;
+}

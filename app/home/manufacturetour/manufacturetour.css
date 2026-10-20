@@ -1,0 +1,204 @@
+.manufacture-tour {
+    width: 100%;
+    padding: 78px 24px 72px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.manufacture-tour-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Heading */
+
+.manufacture-tou-heading {
+    max-width: 700px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.manufacture-tour-eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    color: #007a7a;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.manufacture-tour-heading h2 {
+    margin: 0 0 9px;
+    color: #10333d;
+    font-size: 30px;
+    font-weight: 750;
+    text-align: center;
+    line-height: 1.22;
+    letter-spacing: -0.10px;
+}
+
+.manufacture-tour-heading p {
+    max-width: 510px;
+    margin: 0 auto;
+    color: #7c8da7;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+.manufacture-tour-video-wrapper {
+    width: 100%;
+    max-width: 850px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 17px;
+    background-color: #073d46;
+    box-shadow: 0 12px 24px rgba(13, 48, 57, 0.12);
+}
+
+.manufacture-tour-video-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: inherit;
+    background-color: #073d46;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-size 0.3s ease;
+}
+
+.manufacture-tour-video-card:hover {
+    filter: brightness(1.06);
+}
+
+.manufacture-tour__play-button {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #007f7b;
+    color: #ffffff;
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.manufacture-tour-play-button i {
+    margin-left: 3px;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.manufacture-tour-video-card:hover .manufacture-tour-play-button {
+    background-color: #00958e;
+    transform: scale(1.08);
+}
+
+.manufacture-tour-video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.manufacture-tour-video-title {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.manufacture-tour-video-description {
+    max-width: 450px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Playing video */
+
+.manufacture-tour-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: inherit;
+    background-color: #000000;
+    object-fit: cover;
+}
+
+
+.manufacture-tour-features {
+display: flex;
+    align-items: center;
+    max-width: 850px;
+    padding: 40px 0px;
+        margin: 0px auto;
+    justify-content: space-between;
+}
+
+.manufacture-tour-feature-card {
+    display: flex;
+    min-width: 0;
+    min-height: 54px;
+    padding: 10px 19px;
+    align-items: center;
+    gap: 11px;
+    border: 1px solid #e5edf0;
+    border-radius: 11px;
+    background-color: #f5f8f9;
+}
+
+.manufacture-tour-feature-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    color: #007b78;
+}
+
+.manufacture-tour-feature-icon i {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.manufacture-tour-feature-content {
+    min-width: 0;
+}
+
+.manufacture-tour-feature-content h3 {
+    margin: 0 0 3px;
+    color: #153b45;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.manufacture-tour-feature-content p {
+    margin: 0;
+    color: #7b8ba0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+}

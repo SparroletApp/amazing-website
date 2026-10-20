@@ -1,0 +1,210 @@
+
+.certified-products {
+    padding:12px;
+    background-color: #eff6f5;
+    box-sizing: border-box;
+}
+
+.certified-products-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.certified-products-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certified-products-heading h2 {
+    margin: 0 0 18px;
+    color: #101828;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+}
+
+.certified-products-heading p {
+    margin: 0;
+    max-width: 750px;
+    color: #526174;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+
+.certified-products-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+        height: -webkit-fill-available;
+    background-color: #ffffff;
+    border: 1px solid #e5eaf0;
+    border-radius: 22px;
+    box-shadow: 0 8px 28px rgba(16, 40, 60, 0.06);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.certified-products-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(16, 40, 60, 0.12);
+}
+
+.certified-products-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #eaf1f5;
+}
+
+.certified-products-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.certified-products-card:hover .certified-products-image img {
+    transform: scale(1.04);
+}
+
+.certified-products-badge {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    border: 2px solid #a0f1d0;
+    border-radius: 50px;
+    background-color: #d2fbe8;
+    color: #00694f;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.certified-products-badge-pink {
+    color: #ad1741;
+    background-color: #ffe4eb;
+    border-color: #ffc3d1;
+}
+
+.certified-products-badge-brown {
+    color: #75452f;
+    background-color: #f3e5d9;
+    border-color: #e5c4ae;
+}
+
+.certified-products-badge-blue {
+    color: #075985;
+    background-color: #dbeafe;
+    border-color: #bfdbfe;
+}
+
+.certified-products-category {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    border: 2px solid #e3e9f0;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #94A3B8;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.certified-products-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.certified-products-content h3 {
+    margin: 0 0 7px;
+    color: #0F172A;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.10px;
+}
+
+.certified-products-description {
+    margin: 0 0 10px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.certified-products-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: auto;
+    border-top: 1px solid #edf0f4;
+}
+
+.certified-products-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 4px 0;
+}
+
+.certified-products-detail:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.certified-products-detail span {
+    flex-shrink: 0;
+    color: #94A3B8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.certified-products-detail strong {
+    color: #1E293B;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.certified-products-detail strong.certified-products-quality {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #008b62;
+}
+
+.certified-products-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #08b77c;
+}

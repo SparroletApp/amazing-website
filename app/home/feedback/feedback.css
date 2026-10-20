@@ -1,0 +1,90 @@
+.feedback h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.feedback {
+    background-color: #F4F8F8;
+    padding: 40px 0px;
+}
+
+.feedback-card {
+    background-color: white;
+    padding: 30px 20px;
+    height: -webkit-fill-available;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F4F8F8;
+}
+
+.downward-feedback {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.feedback-card-letter{
+    background-color: #E6F3F3;
+    color: #026666;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.feedback-card-name{
+    margin-bottom: 0px;
+   color:  #0A2E39;
+   font-weight: 700;
+}
+
+.feedback-card-designation{
+    color: #64748B;
+}
+
+.feedback-card-designation{
+    margin-bottom: 0px;
+}
+.feedback-card p {
+    color: #64748B;
+    font-size: 15px;
+    max-width: 320px;
+}
+
+.carere-build {
+    width: 100%;
+    min-height: 220px;
+
+    background:
+        linear-gradient(
+            rgba(6, 35, 43, 0.82),
+            rgba(6, 35, 43, 0.82)
+        ),
+        url("/bottom-footer.jpg");
+
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.carere-build h1{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-openings button{
+    background-color: white;
+    color: #004D4D;
+    border: none;
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+}
