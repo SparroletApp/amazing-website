@@ -147,7 +147,7 @@ function AboutUs() {
 
                     </div>
 
-<Certifications/>
+                    <Certifications />
                 </div>
             </section>
         </>
