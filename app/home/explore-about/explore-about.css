@@ -44,3 +44,21 @@
     font-weight: 700;
     border: none;
 }
+
+@media(max-width:960px){
+    .explore-about .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .explore-about{
+        padding: 30px;
+    }
+
+    .about-right{
+        padding-bottom: 30px;
+    }
+
+    .about-img{
+        height: 300px;
+    }
+}

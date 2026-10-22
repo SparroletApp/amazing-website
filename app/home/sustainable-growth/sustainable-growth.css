@@ -82,3 +82,25 @@ background: rgba(255, 255, 255, 0.8);
     color: #0E1E38;
     margin-bottom: 0px;
 }
+
+@media(max-width:960px){
+    .sustainable-growth {
+        padding: 40px;
+    }
+
+    .sustainable-growth .container{
+        padding: 0px;
+    }
+
+    .trusted-partner{
+        padding-bottom: 40px;
+    }
+
+    .sustainable-img {
+        height: 350px;
+    }
+
+    .free-card {
+        bottom: -31px;
+    }
+}

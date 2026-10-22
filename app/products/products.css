@@ -609,7 +609,6 @@
     transition: background 0.2s ease;
 }
 
-/* Surgical Gloves - Light Blue */
 .products-card.surgical .products-card-visual {
     background: linear-gradient(to bottom, #EAF7FC 0%, #FFFFFF 100%);
 }
@@ -748,11 +747,13 @@
 
     .products-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 25px;
     }
 
     .products-card-visual {
         min-height: 155px;
+        display: flex;
+        justify-content: center;
     }
 
     .products-card-image {
@@ -762,7 +763,7 @@
     }
 
     .products-card-icon {
-        left: 30%;
+      
         width: 75px;
         height: 75px;
     }

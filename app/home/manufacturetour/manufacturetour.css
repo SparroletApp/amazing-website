@@ -202,3 +202,36 @@ display: flex;
     font-weight: 400;
     line-height: 1.4;
 }
+
+
+@media(max-width:960px){
+    .manufacture-tour{
+        padding: 40px 20px;
+    }
+
+    .manufacture-tour-heading h2 br{
+        display: none;
+    }
+
+    .manufacture-tour-heading h2 {
+        font-size: 25px;
+    }
+
+    .manufacture-tour-heading p {
+        margin-bottom: 30px;
+    }
+
+    .manufacture-tour-features{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .manufacture-tour-feature-card{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .manufacture-tour-features{
+        padding-bottom: 0px;
+    }
+}

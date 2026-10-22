@@ -82,3 +82,18 @@
     font-weight: 400;
 }
 
+
+
+@media(max-width:767px){
+    .green-cards{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 30px;
+        margin: 0px;
+    }
+
+    .certified-standard-heading {
+        margin-bottom: 0px;
+    }
+}

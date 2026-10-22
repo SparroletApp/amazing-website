@@ -1,8 +1,79 @@
 "use client";
 
+import { useState } from "react";
 import "./contact-us.css";
 
 function ContactUs() {
+    const [loading, setLoading] = useState(false);
+    const [statusMessage, setStatusMessage] = useState("");
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    async function handleContactSubmit(
+        event: React.FormEvent<HTMLFormElement>
+    ) {
+        event.preventDefault();
+
+        const form = event.currentTarget;
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        setLoading(true);
+        setStatusMessage("");
+        setIsSuccess(false);
+
+        const formData = new FormData(form);
+
+        const payload = {
+            firstName: String(formData.get("firstName") || ""),
+            lastName: String(formData.get("lastName") || ""),
+            email: String(formData.get("email") || ""),
+            phone: String(formData.get("phone") || ""),
+            subject: String(formData.get("subject") || ""),
+            message: String(formData.get("message") || ""),
+        };
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                setIsSuccess(false);
+                setStatusMessage(
+                    result.message ||
+                        "Unable to send your message. Please try again."
+                );
+                return;
+            }
+
+            setIsSuccess(true);
+            setStatusMessage(
+                result.message ||
+                    "Thank you for contacting us! Your message has been sent."
+            );
+
+            form.reset();
+        } catch (error) {
+            console.error("Contact form submission error:", error);
+
+            setIsSuccess(false);
+            setStatusMessage(
+                "Unable to send your message. Please check your connection and try again."
+            );
+        } finally {
+            setLoading(false);
+        }
+    }
+
     return (
         <section className="contact">
             <div className="contact-header">
@@ -14,6 +85,7 @@ function ContactUs() {
                     </p>
                 </div>
             </div>
+
             <div className="contact-content">
                 <div className="container">
                     <div className="row contact-row">
@@ -81,6 +153,7 @@ function ContactUs() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-6 col-12">
                             <div className="contact-form-card">
                                 <h2>
@@ -90,20 +163,7 @@ function ContactUs() {
 
                                 <form
                                     className="contact-form"
-                                    onSubmit={(event) => {
-                                        event.preventDefault();
-
-                                        const form = event.currentTarget;
-
-                                        if (!form.checkValidity()) {
-                                            form.reportValidity();
-                                            return;
-                                        }
-
-                                        alert(
-                                            "Thank you for contacting us! Please connect this form to your backend to send your message."
-                                        );
-                                    }}
+                                    onSubmit={handleContactSubmit}
                                 >
                                     <div className="row contact-form-row">
                                         <div className="col-md-6 col-12">
@@ -115,7 +175,9 @@ function ContactUs() {
                                                 id="first-name"
                                                 name="firstName"
                                                 placeholder="John"
+                                                autoComplete="given-name"
                                                 required
+                                                disabled={loading}
                                             />
                                         </div>
 
@@ -128,7 +190,9 @@ function ContactUs() {
                                                 id="last-name"
                                                 name="lastName"
                                                 placeholder="Doe"
+                                                autoComplete="family-name"
                                                 required
+                                                disabled={loading}
                                             />
                                         </div>
                                     </div>
@@ -142,7 +206,9 @@ function ContactUs() {
                                             id="email"
                                             name="email"
                                             placeholder="you@example.com"
+                                            autoComplete="email"
                                             required
+                                            disabled={loading}
                                         />
                                     </div>
 
@@ -155,7 +221,9 @@ function ContactUs() {
                                             id="phone"
                                             name="phone"
                                             placeholder="+91 6238742481"
+                                            autoComplete="tel"
                                             required
+                                            disabled={loading}
                                         />
                                     </div>
 
@@ -166,6 +234,7 @@ function ContactUs() {
                                             name="subject"
                                             defaultValue=""
                                             required
+                                            disabled={loading}
                                         >
                                             <option value="" disabled>
                                                 Select a subject
@@ -196,15 +265,46 @@ function ContactUs() {
                                             placeholder="How can we help you?"
                                             rows={3}
                                             required
+                                            disabled={loading}
                                         />
                                     </div>
+
+                                    {statusMessage && (
+                                        <p
+                                            role="status"
+                                            aria-live="polite"
+                                            className={`contact-status ${
+                                                isSuccess
+                                                    ? "contact-status-success"
+                                                    : "contact-status-error"
+                                            }`}
+                                        >
+                                            <i
+                                                className={`bi ${
+                                                    isSuccess
+                                                        ? "bi-check-circle-fill"
+                                                        : "bi-exclamation-circle-fill"
+                                                }`}
+                                            ></i>
+                                            {" "}{statusMessage}
+                                        </p>
+                                    )}
 
                                     <button
                                         type="submit"
                                         className="contact-submit-button"
+                                        disabled={loading}
                                     >
-                                        <i className="bi bi-send-fill"></i>
-                                        Send Message
+                                        <i
+                                            className={`bi ${
+                                                loading
+                                                    ? "bi-arrow-repeat"
+                                                    : "bi-send-fill"
+                                            }`}
+                                        ></i>
+                                        {loading
+                                            ? "Sending Message..."
+                                            : "Send Message"}
                                     </button>
                                 </form>
                             </div>
