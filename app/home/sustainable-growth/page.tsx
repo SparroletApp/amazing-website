@@ -1,6 +1,12 @@
+
+"use client";
+
+import { useRouter } from "next/navigation";
 import "./sustainable-growth.css";
 
 function SustainableGrowth() {
+    const router = useRouter();
+    
     return (
         <>
             <section className="sustainable-growth">
@@ -30,7 +36,7 @@ function SustainableGrowth() {
                                 </div>
 
                                 <div className="learn-more-btn">
-                                    <button>Learn More About Us</button>
+                                    <button  onClick={() => router.push("/aboutus")}>Learn More About Us</button>
                                 </div>
                             </div>
                         </div>

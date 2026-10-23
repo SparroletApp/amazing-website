@@ -36,30 +36,30 @@
     margin-bottom: 25px;
 }
 
-.certificate-icon{
+.certificate-icon {
     color: #026666;
     margin-bottom: 10px;
     font-size: 35px;
 }
 
-.certificate-card h3{
+.certificate-card h3 {
     color: #0A2E39;
     font-size: 22px;
     font-weight: 700;
 }
 
-.certificate-card p{
+.certificate-card p {
     color: #64748B;
 }
 
-.certificate-card button{
+.certificate-card button {
     background-color: white;
     border: 2px solid #026666;
     padding: 5px 15px;
     color: #026666;
     font-weight: 600;
     border-radius: 20px;
-        cursor: pointer;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -70,6 +70,7 @@
     box-shadow: 0 4px 12px rgba(2, 102, 102, 0.2);
     transform: translateY(-2px);
 }
+
 .certificate-modal-overlay {
     position: fixed;
     inset: 0;
@@ -204,7 +205,7 @@
     gap: 12px;
 }
 
-.certificate-pdf-info > i {
+.certificate-pdf-info>i {
     color: #D73535;
     font-size: 32px;
 }
@@ -250,40 +251,105 @@
 
 @media (max-width: 576px) {
     .certificate-modal-overlay {
+        position: fixed;
+        inset: 0;
         padding: 12px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .about-header {
+        padding: 0;
+    }
+
+    .certificates .container {
+        padding: 30px 20px;
+    }
+
+    .about-header h1 {
+        font-size: 25px;
+    }
+
+    .about-header p {
+        font-size: 14px;
+    }
+
+    .certificate-icon {
+        font-size: 25px;
+    }
+
+    .certificate-card h3 {
+        font-size: 20px;
+    }
+
+    .certificate-card p {
+        font-size: 14px;
+    }
+
+    .certificate-card button {
+        font-size: 14px;
     }
 
     .certificate-modal {
-        max-height: 94vh;
+        width: 100%;
+        max-width: 100%;
+        max-height: calc(100dvh - 24px);
+        overflow-x: hidden;
+        overflow-y: auto;
         border-radius: 14px;
+        flex-shrink: 0;
     }
 
     .certificate-modal-header {
-        padding: 20px;
+        padding: 16px;
+        gap: 10px;
     }
 
     .certificate-modal-header h2 {
         font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .certificate-modal-close {
+        width: 34px;
+        height: 34px;
     }
 
     .certificate-modal-image {
-        padding: 18px 20px 10px;
+        padding: 14px 16px 8px;
     }
 
     .certificate-modal-image img {
-        max-height: 240px;
+        width: 100%;
+        max-height: 180px;
+        object-fit: contain;
     }
 
     .certificate-modal-content {
-        padding: 20px;
+        padding: 16px;
+    }
+
+    .certificate-modal-content h3 {
+        font-size: 18px;
+    }
+
+    .certificate-modal-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 18px;
     }
 
     .certificate-modal-footer {
         align-items: stretch;
         flex-direction: column;
+        gap: 16px;
     }
 
     .certificate-download-btn {
         width: 100%;
+        box-sizing: border-box;
     }
 }

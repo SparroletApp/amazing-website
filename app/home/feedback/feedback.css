@@ -88,3 +88,32 @@
     font-weight: 600;
     border-radius: 20px;
 }
+
+@media(max-width:960px){
+    .feedback h1 {
+        font-size: 25px;
+        margin-bottom: 25px;
+            }
+
+            .feedback .row{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feedback{
+                padding: 40px 20px;
+            }
+
+            .carere-build h1{
+                font-size: 25px;
+            }
+
+            .btn-openings button {
+                font-size: 13px;
+            }
+}
+
+.carere-build{
+    min-height: 160px;
+}

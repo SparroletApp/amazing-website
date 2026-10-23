@@ -35,7 +35,7 @@ function LandingPage() {
                                     <span>SAFE N CARE</span>
                                 </div>
 
-                                <a href="#products" className="explore-button">
+                                <a href="/products" className="explore-button">
                                     Explore Now
                                 </a>
                             </div>

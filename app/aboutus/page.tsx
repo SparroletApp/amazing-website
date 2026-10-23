@@ -105,7 +105,7 @@ function AboutUs() {
                         </div>
                         <div className="row">
                             {managementData.map((member, index) => (
-                                <div className="col-lg-4 col-md-6 col-12" key={index}>
+                                <div className="col-lg-4 col-md-6 col-6" key={index}>
                                     <div className="management-card">
                                         <div className="management-img">
                                             <img src={member.image} alt={member.name} />
