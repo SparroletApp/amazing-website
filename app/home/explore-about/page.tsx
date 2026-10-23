@@ -1,6 +1,12 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import "./explore-about.css";
 
 function ExploreAbout() {
+
+    const router = useRouter();
+    
     return (
         <>
             <section className="explore-about">
@@ -16,7 +22,7 @@ function ExploreAbout() {
                                 <h1>Get to Know the Top Manufacturer of Surgical Gloves in India</h1>
                                 <p>We are a leading manufacturer and exporter of latex gloves in India, supplying high quality gloves to hospitals, clinics, diagnostic centers, and healthcare setups globally. With a commitment to safety, innovation, and supreme quality standards, we ensure complete hand protection for doctors, surgeons, and nurses everywhere. </p>
                                 <div className="explore-btn">
-                                    <button>Explore About Us</button>
+                                    <button  onClick={() => router.push("/aboutus")}>Explore About Us</button>
                                 </div>
                             </div>
                         </div>

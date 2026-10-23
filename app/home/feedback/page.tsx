@@ -1,7 +1,11 @@
 
+"use client";
+import { useRouter } from "next/navigation";
 import "./feedback.css";
 
 function Feedback() {
+
+    const router = useRouter();
 
     const feedbackData = [
         {
@@ -61,7 +65,7 @@ function Feedback() {
                 <div className="carere-build">
                     <h1>Build Your Career With Us</h1>
                     <div className="btn-openings">
-                        <button>
+                        <button  onClick={() => router.push("/career")}>
                         See Openings <i className="bi bi-backpack4-fill"></i>
                         </button>
                     </div>
