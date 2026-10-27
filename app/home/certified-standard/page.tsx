@@ -3,7 +3,7 @@ import "./certified-standard.css";
 function CertifiedStandard() {
     return (
         <section className="certified-standard">
-            <div className="certified-standard-container">
+            <div className="container certified-standard-container">
                 <div className="certified-standard-heading">
                     <h2>Internationally Certified Standards</h2>
                     <p>

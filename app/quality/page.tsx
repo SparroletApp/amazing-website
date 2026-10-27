@@ -184,7 +184,7 @@ function Quality() {
 
             {/* HERO SECTION */}
             <section className="quality-hero">
-                <div className="quality-container quality-hero-grid">
+                <div className="container quality-container quality-hero-grid">
                     <div className="quality-hero-text">
                         <p className="quality-eyebrow">
                             <span className="quality-eyebrow-line"></span>
@@ -231,9 +231,8 @@ function Quality() {
                 </div>
             </section>
 
-            {/* QUALITY OVERVIEW */}
             <section className="quality-intro">
-                <div className="quality-container">
+                <div className="container quality-container">
                     <div className="quality-intro-heading">
                         <p className="quality-section-label">
                             QUALITY IS OUR PRIORITY
@@ -276,7 +275,7 @@ function Quality() {
                         id={section.id}
                         key={section.id}
                     >
-                        <div className="quality-container">
+                        <div className="container quality-container">
 
                             <div className="sterilization-header">
                                 <div>
@@ -423,7 +422,7 @@ function Quality() {
                         key={section.id}
                     >
                         <div
-                            className={`quality-container quality-detail-grid ${
+                            className={`container quality-container quality-detail-grid ${
                                 section.imagePosition === "right"
                                     ? "quality-image-right"
                                     : ""
@@ -465,7 +464,7 @@ function Quality() {
             ))}
 
             <section className="quality-closing">
-                <div className="quality-container quality-closing-content">
+                <div className="container quality-container quality-closing-content">
                     <div>
                         <p className="quality-closing-label">
                             OUR PROMISE

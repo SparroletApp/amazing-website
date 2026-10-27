@@ -46,7 +46,7 @@ function CertifiedProducts() {
 
     return (
         <section className="certified-products">
-            <div className="certified-products-container">
+            <div className="container certified-products-container">
 
                 <div className="certified-products-heading">
 

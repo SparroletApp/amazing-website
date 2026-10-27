@@ -33,9 +33,7 @@
 
 .landing-wrap {
     width: 100%;
-    max-width: 1536px;
     margin: 0 auto;
-    padding: 55px 6.5%;
     position: relative;
     z-index: 1;
 }
