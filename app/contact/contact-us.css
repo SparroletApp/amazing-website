@@ -18,6 +18,16 @@
     line-height: 1.3;
 }
 
+.jeet-contact{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.data-iframe{
+    height: auto;
+}
+
 .contact-header p {
     color: #c2d3d7;
     font-size: 15px;

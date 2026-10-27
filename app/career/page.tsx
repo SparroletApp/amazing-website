@@ -180,7 +180,7 @@ function Career() {
                 </p>
             </div>
 
-            <div className="career-container">
+            <div className="container career-container">
                 <div className="career-intro">
                     <span className="career-label">
                         CAREER OPPORTUNITIES

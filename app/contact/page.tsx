@@ -50,7 +50,7 @@ function ContactUs() {
                 setIsSuccess(false);
                 setStatusMessage(
                     result.message ||
-                        "Unable to send your message. Please try again."
+                    "Unable to send your message. Please try again."
                 );
                 return;
             }
@@ -58,7 +58,7 @@ function ContactUs() {
             setIsSuccess(true);
             setStatusMessage(
                 result.message ||
-                    "Thank you for contacting us! Your message has been sent."
+                "Thank you for contacting us! Your message has been sent."
             );
 
             form.reset();
@@ -89,7 +89,7 @@ function ContactUs() {
             <div className="contact-content">
                 <div className="container">
                     <div className="row contact-row">
-                        <div className="col-lg-6 col-12">
+                        <div className="col-lg-6 col-12 jeet-contact">
                             <div className="contact-info">
                                 <div className="contact-info-card">
                                     <div className="contact-icon">
@@ -151,6 +151,19 @@ function ContactUs() {
                                         View Larger Map
                                     </a>
                                 </div>
+                            </div>
+
+                             <div className="contact-form-card data-iframe">
+                                <iframe
+                                    src="https://maps.google.com/maps?q=Amazing%20Rubber%20Products%20Pvt.%20Ltd.%2C%20Plot%20No.%2014C%2C%20CSEZ%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682037&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    width="100%"
+                                    height="140"
+                                    style={{ border: 0, borderRadius: "16px" }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Amazing Rubber Products Pvt. Ltd. Location"
+                                />
                             </div>
                         </div>
 
@@ -273,18 +286,16 @@ function ContactUs() {
                                         <p
                                             role="status"
                                             aria-live="polite"
-                                            className={`contact-status ${
-                                                isSuccess
+                                            className={`contact-status ${isSuccess
                                                     ? "contact-status-success"
                                                     : "contact-status-error"
-                                            }`}
+                                                }`}
                                         >
                                             <i
-                                                className={`bi ${
-                                                    isSuccess
+                                                className={`bi ${isSuccess
                                                         ? "bi-check-circle-fill"
                                                         : "bi-exclamation-circle-fill"
-                                                }`}
+                                                    }`}
                                             ></i>
                                             {" "}{statusMessage}
                                         </p>
@@ -296,11 +307,10 @@ function ContactUs() {
                                         disabled={loading}
                                     >
                                         <i
-                                            className={`bi ${
-                                                loading
+                                            className={`bi ${loading
                                                     ? "bi-arrow-repeat"
                                                     : "bi-send-fill"
-                                            }`}
+                                                }`}
                                         ></i>
                                         {loading
                                             ? "Sending Message..."

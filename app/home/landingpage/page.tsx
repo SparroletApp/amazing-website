@@ -8,7 +8,7 @@ function LandingPage() {
             <section className="landing-page" id="home">
                 <div className="landing-overlay"></div>
 
-                <div className="landing-wrap">
+                <div className="container landing-wrap">
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-12">
                             <div className="landing-content">
