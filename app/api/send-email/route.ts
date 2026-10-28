@@ -151,7 +151,7 @@ This email was generated from your website's career application form.
     <title>New Career Application</title>
 </head>
 
-<body style="margin:0;padding:0;background-color:#F1F5F7;font-family:Arial,Helvetica,sans-serif;color:#263B42;">
+<body style="margin:0;padding:0;background-color:#F1F5F7;color:#263B42;">
 
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
         style="background-color:#F1F5F7;padding:35px 12px;">

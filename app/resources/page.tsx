@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -72,16 +73,34 @@ const faqs = [
 ];
 
 function Resources() {
-    const [activeFaq, setActiveFaq] = useState<number | null>(0);
+    const [activeFaq, setActiveFaq] = useState(0);
 
     return (
         <main className="resources">
+            {/* Header */}
             <section className="resources-header">
-                <div className="resources-header-image" aria-hidden="true"></div>
+                <div
+                    className="resources-header-image"
+                    aria-hidden="true"
+                />
 
                 <div className="container resources-header-content">
-                    <div className="discover-small">EXPLORE OUR FACILITY</div>
-                    <h1>Discover Our Advanced Surgical Gloves <br/>Manufacturing</h1>
+                    <div className="products-breadcrumb">
+                        <span>Home</span>
+                        <i className="bi bi-chevron-right" />
+                        <span>Resources</span>
+                    </div>
+
+                    <div className="products-eyebrow">
+                        EXPLORE OUR FACILITY
+                    </div>
+
+                    <h1>
+                        Discover Our Advanced Surgical Gloves
+                        <br />
+                        Manufacturing
+                    </h1>
+
                     <p>
                         Discover our manufacturing facility at Cochin Special
                         Economic Zone (CSEZ).
@@ -89,6 +108,7 @@ function Resources() {
                 </div>
             </section>
 
+            {/* Gallery */}
             <section className="resources-gallery">
                 <div className="container">
                     <div className="resources-heading">
@@ -101,7 +121,7 @@ function Resources() {
                     </div>
 
                     <div className="row resources-gallery-grid">
-                        {galleryImages.map((image, index) => (
+                        {galleryImages.map((image) => (
                             <div
                                 className="col-lg-3 col-md-6 col-6"
                                 key={image.src}
@@ -118,53 +138,111 @@ function Resources() {
                     </div>
                 </div>
             </section>
+
             <section className="resources-faq">
                 <div className="container">
-                    <div className="resources-heading">
-                        <h2>FAQ&apos;S</h2>
+                    <div className="resources-heading resources-faq-heading">
+                        <span className="resources-faq-eyebrow">
+                            NEED TO KNOW?
+                        </span>
+
+                        <h2>Frequently Asked Questions</h2>
+
                         <p>
-                            Our FAQ section provides guidance on how to store
-                            and use medical gloves correctly.
+                            Find answers to common questions about our medical
+                            gloves, quality standards, and ordering process.
                         </p>
                     </div>
 
-                    <div className="resources-faq-list">
-                        {faqs.map((faq, index) => (
-                            <div
-                                className={`resources-faq-item ${activeFaq === index ? "active" : ""
-                                    }`}
-                                key={faq.question}
-                            >
-                                <button
-                                    type="button"
-                                    className="resources-faq-question"
-                                    onClick={() =>
-                                        setActiveFaq(
-                                            activeFaq === index ? null : index
-                                        )
-                                    }
-                                    aria-expanded={activeFaq === index}
+                    <div className="resources-faq-layout">
+                        <div
+                            className="resources-faq-questions"
+                            role="group"
+                            aria-label="Frequently asked questions"
+                        >
+                            {faqs.map((faq, index) => (
+                                <div
+                                    className={`resources-faq-item ${activeFaq === index ? "active" : ""
+                                        }`}
+                                    key={faq.question}
                                 >
-                                    <span>{faq.question}</span>
-                                    <i
-                                        className={`bi ${activeFaq === index
-                                                ? "bi-x"
-                                                : "bi-plus"
+                                    <button
+                                        type="button"
+                                        className={`resources-faq-question ${activeFaq === index ? "active" : ""
                                             }`}
-                                        aria-hidden="true"
-                                    />
-                                </button>
+                                        onClick={() =>
+                                            setActiveFaq(
+                                                activeFaq === index ? -1 : index
+                                            )
+                                        }
+                                        aria-expanded={activeFaq === index}
+                                    >
+                                        <span className="resources-faq-number">
+                                            {String(index + 1).padStart(2, "0")}
+                                        </span>
 
-                                {activeFaq === index && (
-                                    <div className="resources-faq-answer">
+                                        <span className="resources-faq-question-text">
+                                            {faq.question}
+                                        </span>
+
+                                        <i
+                                            className={`bi ${activeFaq === index
+                                                    ? "bi-dash-lg"
+                                                    : "bi-plus-lg"
+                                                } resources-faq-arrow`}
+                                            aria-hidden="true"
+                                        />
+                                    </button>
+
+                                    <div
+                                        className={`resources-faq-mobile-answer ${activeFaq === index ? "show" : ""
+                                            }`}
+                                        aria-hidden={activeFaq !== index}
+                                    >
                                         <p>{faq.answer}</p>
                                     </div>
-                                )}
-                            </div>
-                        ))}
+                                </div>
+                            ))}
+                        </div>
+                        <div className="resources-faq-answer-panel">
+                            {activeFaq >= 0 && (
+                                <>
+                                    <div className="resources-faq-answer-icon">
+                                        <i
+                                            className="bi bi-patch-question"
+                                            aria-hidden="true"
+                                        />
+                                    </div>
+
+                                    <span className="resources-faq-answer-label">
+                                        ANSWER TO QUESTION{" "}
+                                        {String(activeFaq + 1).padStart(2, "0")}
+                                    </span>
+
+                                    <h3>{faqs[activeFaq].question}</h3>
+
+                                    <div className="resources-faq-answer-divider" />
+
+                                    <p>{faqs[activeFaq].answer}</p>
+
+                                    <div className="resources-faq-answer-footer">
+                                        <i
+                                            className="bi bi-check-circle"
+                                            aria-hidden="true"
+                                        />
+
+                                        <span>
+                                            Need more information? Contact our team
+                                            for assistance.
+                                        </span>
+                                    </div>
+                                </>
+                            )}
+                        </div>
                     </div>
                 </div>
             </section>
+
         </main>
     );
 }

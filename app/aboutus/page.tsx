@@ -27,7 +27,12 @@ function AboutUs() {
                     <div className="about-header-overlay"></div>
 
                     <div className="container about-header-content">
-                        <div className="about-small">
+                         <div className="products-breadcrumb">
+                            <span>Home</span>
+                            <i className="bi bi-chevron-right"></i>
+                            <span>About Us</span>
+                        </div>
+                        <div className="products-eyebrow">
                             ABOUT US
                         </div>
 

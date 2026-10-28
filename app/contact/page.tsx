@@ -47,10 +47,9 @@ function ContactUs() {
             const result = await response.json();
 
             if (!response.ok) {
-                setIsSuccess(false);
                 setStatusMessage(
                     result.message ||
-                    "Unable to send your message. Please try again."
+                        "Unable to send your message. Please try again."
                 );
                 return;
             }
@@ -58,14 +57,13 @@ function ContactUs() {
             setIsSuccess(true);
             setStatusMessage(
                 result.message ||
-                "Thank you for contacting us! Your message has been sent."
+                    "Thank you for contacting us! Your message has been sent."
             );
 
             form.reset();
         } catch (error) {
             console.error("Contact form submission error:", error);
 
-            setIsSuccess(false);
             setStatusMessage(
                 "Unable to send your message. Please check your connection and try again."
             );
@@ -78,143 +76,192 @@ function ContactUs() {
         <section className="contact">
             <div className="contact-header">
                 <div className="container">
+                    <div className="contact-breadcrumb">
+                        <a href="/">Home</a>
+                        <i className="bi bi-chevron-right"></i>
+                        <span>Contact Us</span>
+                    </div>
 
-                    <div className="let-connect">LET'S CONNECT</div>
-                    <h1>Connect With Our Team to Discuss Your Needs</h1>
-                    <p>
-                        Have questions or want to discuss a project? Reach out
-                        to us and our team will get back to you promptly.
-                    </p>
+                    <div className="contact-header-content">
+                        <span className="contact-eyebrow">
+                            WE ARE HERE TO HELP
+                        </span>
+
+                        <h1>Contact Us</h1>
+
+                        <p>
+                            Have questions about our surgical gloves?
+                            Connect with our team for product information,
+                            bulk orders, and business enquiries.
+                        </p>
+                    </div>
                 </div>
             </div>
 
+
             <div className="contact-content">
                 <div className="container">
-                    <div className="row contact-row">
-                        <div className="col-lg-6 col-12 jeet-contact">
-                            <div className="contact-info">
-                                <div className="contact-info-card">
-                                    <div className="contact-icon">
+                    <div className="contact-panel">
+
+                        <div className="contact-information">
+                            <span className="contact-section-label">
+                                GET IN TOUCH
+                            </span>
+
+                            <h2>We&apos;d Love to Hear From You</h2>
+
+                            <p className="contact-information-description">
+                                Our team is ready to help you find the right
+                                solutions for your healthcare and surgical
+                                glove requirements.
+                            </p>
+
+                            <div className="contact-details">
+                                <div className="contact-detail">
+                                    <div className="contact-detail-icon">
                                         <i className="bi bi-geo-alt-fill"></i>
                                     </div>
 
-                                    <div className="contact-info-text">
+                                    <div className="contact-detail-content">
                                         <h3>Our Location</h3>
                                         <p>
-                                            Plot No. 14 C, Cochin Special
-                                            Economic Zone, Cochin, Kerala, India
+                                            Plot No. 14C, Cochin Special
+                                            Economic Zone, Kakkanad,
+                                            Kochi, Kerala 682037, India
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="contact-info-card">
-                                    <div className="contact-icon">
+                                <div className="contact-detail">
+                                    <div className="contact-detail-icon">
                                         <i className="bi bi-telephone-fill"></i>
                                     </div>
 
-                                    <div className="contact-info-text">
-                                        <h3>Phone</h3>
-                                        <p>
-                                            Customer Care: +91 6238 742 481
-                                        </p>
+                                    <div className="contact-detail-content">
+                                        <h3>Call Us</h3>
+                                        <a href="tel:+916238742481">
+                                            +91 6238 742 481
+                                        </a>
+                                        <span>Customer Care</span>
                                     </div>
                                 </div>
 
-                                <div className="contact-info-card">
-                                    <div className="contact-icon">
+                                <div className="contact-detail">
+                                    <div className="contact-detail-icon">
                                         <i className="bi bi-envelope-fill"></i>
                                     </div>
 
-                                    <div className="contact-info-text">
-                                        <h3>Email</h3>
-                                        <p>
-                                            info@amazingglove.com /
+                                    <div className="contact-detail-content">
+                                        <h3>Email Us</h3>
+                                        <a href="mailto:info@amazingglove.com">
+                                            info@amazingglove.com
+                                        </a>
+                                        <a href="mailto:marketing@amazingglove.com">
                                             marketing@amazingglove.com
-                                        </p>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div className="contact-map-card">
-                                    <h3>
-                                        Amazing Rubber Products Pvt. Ltd. (4.8 ★)
-                                    </h3>
+                            <div className="contact-social">
+                                <h3>Follow Our Journey</h3>
 
-                                    <p>
-                                        Plot No. 14C, CSEZ, Kakkanad, Kochi,
-                                        Kerala 682037
-                                    </p>
-
+                                <div className="contact-social-links">
                                     <a
-                                        href="https://www.google.com/maps/search/?api=1&query=Amazing+Rubber+Products+Pvt+Ltd+CSEZ+Kakkanad+Kochi"
+                                        href="https://www.facebook.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="contact-map-button"
+                                        aria-label="Facebook"
                                     >
-                                        View Larger Map
+                                        <i className="bi bi-facebook"></i>
+                                    </a>
+
+                                    <a
+                                        href="https://www.instagram.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Instagram"
+                                    >
+                                        <i className="bi bi-instagram"></i>
+                                    </a>
+
+                                    <a
+                                        href="https://www.linkedin.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="LinkedIn"
+                                    >
+                                        <i className="bi bi-linkedin"></i>
+                                    </a>
+
+                                    <a
+                                        href="https://www.youtube.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="YouTube"
+                                    >
+                                        <i className="bi bi-youtube"></i>
                                     </a>
                                 </div>
                             </div>
-
-                             <div className="contact-form-card data-iframe">
-                                <iframe
-                                    src="https://maps.google.com/maps?q=Amazing%20Rubber%20Products%20Pvt.%20Ltd.%2C%20Plot%20No.%2014C%2C%20CSEZ%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682037&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    width="100%"
-                                    height="140"
-                                    style={{ border: 0, borderRadius: "16px" }}
-                                    allowFullScreen
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                    title="Amazing Rubber Products Pvt. Ltd. Location"
-                                />
-                            </div>
                         </div>
 
-                        <div className="col-lg-6 col-12">
-                            <div className="contact-form-card">
-                                <h2>
-                                    <i className="bi bi-send-fill"></i>
-                                    <span>Send Us a Message</span>
-                                </h2>
-                                <form
-                                    className="contact-form"
-                                    onSubmit={handleContactSubmit}
-                                >
-                                    <div className="row contact-form-row">
-                                        <div className="col-md-6 col-12">
-                                            <label htmlFor="first-name">
-                                                First Name
-                                            </label>
-                                            <input
-                                                type="text"
-                                                id="first-name"
-                                                name="firstName"
-                                                placeholder="John"
-                                                autoComplete="given-name"
-                                                required
-                                                disabled={loading}
-                                            />
-                                        </div>
+                        <div className="contact-form-section">
+                            <div className="contact-form-heading">
+                                <span className="contact-section-label">
+                                    LET&apos;S START A CONVERSATION
+                                </span>
 
-                                        <div className="col-md-6 col-12">
-                                            <label htmlFor="last-name">
-                                                Last Name
-                                            </label>
-                                            <input
-                                                type="text"
-                                                id="last-name"
-                                                name="lastName"
-                                                placeholder="Doe"
-                                                autoComplete="family-name"
-                                                required
-                                                disabled={loading}
-                                            />
-                                        </div>
+                                <h2>Send Us a Message</h2>
+
+                                <p>
+                                    Fill in your details and we&apos;ll get
+                                    back to you as soon as possible.
+                                </p>
+                            </div>
+
+                            <form
+                                className="contact-form"
+                                onSubmit={handleContactSubmit}
+                            >
+                                <div className="row contact-form-row">
+                                    <div className="col-md-6 col-12">
+                                        <label htmlFor="first-name">
+                                            First Name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="first-name"
+                                            name="firstName"
+                                            placeholder="Enter first name"
+                                            autoComplete="given-name"
+                                            required
+                                            disabled={loading}
+                                        />
                                     </div>
 
-                                    <div className="contact-form-group">
+                                    <div className="col-md-6 col-12">
+                                        <label htmlFor="last-name">
+                                            Last Name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="last-name"
+                                            name="lastName"
+                                            placeholder="Enter last name"
+                                            autoComplete="family-name"
+                                            required
+                                            disabled={loading}
+                                        />
+                                    </div>
+
+                                    <div className="col-md-6 col-12">
                                         <label htmlFor="email">
                                             Email Address
                                         </label>
+
                                         <input
                                             type="email"
                                             id="email"
@@ -226,10 +273,11 @@ function ContactUs() {
                                         />
                                     </div>
 
-                                    <div className="contact-form-group">
+                                    <div className="col-md-6 col-12">
                                         <label htmlFor="phone">
                                             Phone Number
                                         </label>
+
                                         <input
                                             type="tel"
                                             id="phone"
@@ -241,8 +289,11 @@ function ContactUs() {
                                         />
                                     </div>
 
-                                    <div className="contact-form-group">
-                                        <label htmlFor="subject">Subject</label>
+                                    <div className="col-12">
+                                        <label htmlFor="subject">
+                                            Subject
+                                        </label>
+
                                         <select
                                             id="subject"
                                             name="subject"
@@ -251,76 +302,128 @@ function ContactUs() {
                                             disabled={loading}
                                         >
                                             <option value="" disabled>
-                                                Select a subject
+                                                Select your enquiry
                                             </option>
+
                                             <option value="product-enquiry">
                                                 Product Enquiry
                                             </option>
+
                                             <option value="bulk-order">
                                                 Bulk Order
                                             </option>
+
                                             <option value="quotation">
                                                 Request a Quote
                                             </option>
+
                                             <option value="partnership">
                                                 Business Partnership
                                             </option>
-                                            <option value="other">Other</option>
+
+                                            <option value="other">
+                                                Other
+                                            </option>
                                         </select>
                                     </div>
 
-                                    <div className="contact-form-group">
+                                    <div className="col-12">
                                         <label htmlFor="message">
                                             Your Message
                                         </label>
+
                                         <textarea
                                             id="message"
                                             name="message"
-                                            placeholder="How can we help you?"
-                                            rows={3}
+                                            placeholder="Tell us how we can help you..."
+                                            rows={4}
                                             required
                                             disabled={loading}
                                         />
                                     </div>
+                                </div>
 
-                                    {statusMessage && (
-                                        <p
-                                            role="status"
-                                            aria-live="polite"
-                                            className={`contact-status ${isSuccess
-                                                    ? "contact-status-success"
-                                                    : "contact-status-error"
-                                                }`}
-                                        >
-                                            <i
-                                                className={`bi ${isSuccess
-                                                        ? "bi-check-circle-fill"
-                                                        : "bi-exclamation-circle-fill"
-                                                    }`}
-                                            ></i>
-                                            {" "}{statusMessage}
-                                        </p>
-                                    )}
-
-                                    <button
-                                        type="submit"
-                                        className="contact-submit-button"
-                                        disabled={loading}
+                                {statusMessage && (
+                                    <div
+                                        role="status"
+                                        aria-live="polite"
+                                        className={`contact-status ${
+                                            isSuccess
+                                                ? "contact-status-success"
+                                                : "contact-status-error"
+                                        }`}
                                     >
                                         <i
-                                            className={`bi ${loading
-                                                    ? "bi-arrow-repeat"
-                                                    : "bi-send-fill"
-                                                }`}
+                                            className={`bi ${
+                                                isSuccess
+                                                    ? "bi-check-circle-fill"
+                                                    : "bi-exclamation-circle-fill"
+                                            }`}
                                         ></i>
+
+                                        <span>{statusMessage}</span>
+                                    </div>
+                                )}
+
+                                <button
+                                    type="submit"
+                                    className="contact-submit-button"
+                                    disabled={loading}
+                                >
+                                    <span>
                                         {loading
                                             ? "Sending Message..."
                                             : "Send Message"}
-                                    </button>
-                                </form>
-                            </div>
+                                    </span>
+
+                                    <span className="contact-submit-icon">
+                                        <i
+                                            className={`bi ${
+                                                loading
+                                                    ? "bi-arrow-repeat contact-loading-icon"
+                                                    : "bi-arrow-right"
+                                            }`}
+                                        ></i>
+                                    </span>
+                                </button>
+
+                                <div className="contact-form-note">
+                                    <i className="bi bi-shield-check"></i>
+                                    <span>
+                                        Your information is treated with care.
+                                    </span>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="contact-map-section">
+                <div className="contact-map-heading">
+                    <span className="contact-section-label">
+                        FIND US
+                    </span>
+
+                    <h2>Visit Our Facility</h2>
+
+                    <p>
+                        We welcome your enquiries about our surgical glove
+                        manufacturing facility in Kochi, Kerala.
+                    </p>
+                </div>
+
+                <div className="contact-map-frame">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Amazing%20Rubber%20Products%20Pvt.%20Ltd.%2C%20Plot%20No.%2014C%2C%20CSEZ%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682037&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        title="Amazing Rubber Products Pvt. Ltd. Location"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                 </div>
             </div>
         </section>

@@ -139,14 +139,14 @@ function Career() {
             if (!response.ok) {
                 throw new Error(
                     result.message ||
-                        "Unable to submit your application. Please try again."
+                    "Unable to submit your application. Please try again."
                 );
             }
 
             setSubmitError(false);
             setSubmitMessage(
                 result.message ||
-                    "Your application has been submitted successfully!"
+                "Your application has been submitted successfully!"
             );
 
             resetForm();
@@ -170,14 +170,20 @@ function Career() {
         <section className="career">
             <div className="about-career-header">
                 <div className="container">
-                    <div className="career-small">GROW TOGETHER</div>
-                <h1>Grow Your Career With a Trusted<br/> Industry Leader</h1>
-                <p>
-                    We're always looking for talented individuals to join
-                    our growing team.
-                    <br />
-                    Explore our current openings below.
-                </p>
+
+                    <div className="products-breadcrumb">
+                        <span>Home</span>
+                        <i className="bi bi-chevron-right"></i>
+                        <span>Career</span>
+                    </div>
+                    <div className="products-eyebrow">GROW TOGETHER</div>
+                    <h1>Grow Your Career With a Trusted<br /> Industry Leader</h1>
+                    <p>
+                        We're always looking for talented individuals to join
+                        our growing team.
+                        <br />
+                        Explore our current openings below.
+                    </p>
                 </div>
             </div>
 
@@ -484,20 +490,18 @@ function Career() {
 
                             {submitMessage && (
                                 <div
-                                    className={`career-submit-message ${
-                                        submitError
+                                    className={`career-submit-message ${submitError
                                             ? "career-submit-error"
                                             : "career-submit-success"
-                                    }`}
+                                        }`}
                                     role={submitError ? "alert" : "status"}
                                     aria-live="polite"
                                 >
                                     <i
-                                        className={`bi ${
-                                            submitError
+                                        className={`bi ${submitError
                                                 ? "bi-exclamation-circle"
                                                 : "bi-check-circle-fill"
-                                        }`}
+                                            }`}
                                     ></i>
                                     <span>{submitMessage}</span>
                                 </div>
@@ -523,11 +527,10 @@ function Career() {
                                         : "Submit Application"}
 
                                     <i
-                                        className={`bi ${
-                                            isSubmitting
+                                        className={`bi ${isSubmitting
                                                 ? "bi-arrow-repeat"
                                                 : "bi-arrow-right"
-                                        }`}
+                                            }`}
                                     ></i>
                                 </button>
                             </div>
