@@ -1,62 +1,64 @@
-.sustainable-growth{
+.sustainable-growth {
     padding: 50px 0px;
 }
 
-.sustainable-growth .container{
+.sustainable-growth .container {
     padding: 40px 10px;
 }
 
-.sustainable-img img{
+.sustainable-img img {
     width: 100%;
     height: 100%;
     border-radius: 40px;
     object-fit: cover;
 }
 
-.sustainable-img{
+.sustainable-img {
     height: 400px;
     position: relative;
 }
 
-.about-badge{
+.about-badge {
     color: #0097A7;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.trusted-partner h1{
+.trusted-partner h1 {
     font-weight: 700;
 }
 
 
-.trusted-partner h1 span{
+.trusted-partner h1 span {
     color: #0097A7;
 }
 
-.trusted-desc{
+.trusted-desc {
     color: #475569;
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
-.client-classify{
+.client-classify {
     margin-bottom: 30px;
 }
 
-.client-pair{
+.client-pair {
     display: flex;
     gap: 15px;
     font-size: 17px;
-    padding: 5px ;
+    padding: 5px;
     font-weight: 600;
     color: #334155;
 }
 
-.client-pair span{
+.client-pair span {
     color: #0097A7;
 }
 
-.learn-more-btn button{
+.learn-more-btn button {
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -66,7 +68,7 @@
     background-color: #0097A7;
 }
 
-.free-card{
+.free-card {
     position: absolute;
     bottom: -24px;
     right: -10px;
@@ -74,25 +76,25 @@
     width: 300px;
     border-radius: 20px;
 
-background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
-.free-card h2{
+.free-card h2 {
     font-weight: 700;
     color: #0E1E38;
     margin-bottom: 0px;
 }
 
-@media(max-width:960px){
+@media(max-width:960px) {
     .sustainable-growth {
         padding: 40px;
     }
 
-    .sustainable-growth .container{
+    .sustainable-growth .container {
         padding: 0px;
     }
 
-    .trusted-partner{
+    .trusted-partner {
         padding-bottom: 40px;
     }
 
@@ -102,5 +104,38 @@ background: rgba(255, 255, 255, 0.8);
 
     .free-card {
         bottom: -31px;
+    }
+
+    .client-pair {
+        font-size: 15px;
+    }
+
+    .learn-more-btn button {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+
+    .sustainable-img {
+        height: 280px;
+    }
+
+    .sustainable-img img {
+        border-radius: 15px;
+    }
+
+    .free-card h2{
+        font-size: 18px;
+    } 
+
+    .free-card h4{
+        font-size: 15px;
+    }
+
+    .free-card p{
+        font-size: 13px;
+    }
+
+    .free-card{
+        width: 250px;
     }
 }

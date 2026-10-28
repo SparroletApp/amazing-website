@@ -192,8 +192,7 @@ function Quality() {
                         </p>
 
                         <h1>
-                            Quality You Can
-                            <span> Trust.</span>
+                            Quality You Can <span> Trust.</span>
                         </h1>
 
                         <p className="quality-hero-description">
@@ -202,16 +201,6 @@ function Quality() {
                             every stage reflects our commitment to
                             consistency, care, and dependable products.
                         </p>
-
-                        <a href="#quality-control" className="quality-button">
-                            Explore Our Quality
-                            <span>↗</span>
-                        </a>
-
-                        <div className="quality-hero-note">
-                            <span className="quality-note-dot"></span>
-                            Quality · Care · Confidence
-                        </div>
                     </div>
 
                     <div className="quality-hero-image">
@@ -341,9 +330,6 @@ function Quality() {
                                                 </p>
                                             </div>
 
-                                            <span className="sterilization-method-arrow">
-                                                ↗
-                                            </span>
                                         </article>
                                     ))}
                                 </div>
@@ -487,7 +473,6 @@ function Quality() {
                         className="quality-button quality-button-light"
                     >
                         Contact Us
-                        <span>↗</span>
                     </a>
                 </div>
             </section>

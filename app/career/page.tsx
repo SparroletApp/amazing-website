@@ -150,8 +150,6 @@ function Career() {
             );
 
             resetForm();
-
-            // Close the popup after showing the success message.
             window.setTimeout(() => {
                 setShowPopup(false);
                 setSubmitMessage("");
@@ -170,24 +168,27 @@ function Career() {
 
     return (
         <section className="career">
-            <div className="about-header">
-                <h1>Join Our Team</h1>
+            <div className="about-career-header">
+                <div className="container">
+                    <div className="career-small">GROW TOGETHER</div>
+                <h1>Grow Your Career With a Trusted<br/> Industry Leader</h1>
                 <p>
                     We're always looking for talented individuals to join
                     our growing team.
                     <br />
                     Explore our current openings below.
                 </p>
+                </div>
             </div>
 
             <div className="container career-container">
-                <div className="career-intro">
+                {/* <div className="career-intro">
                     <span className="career-label">
-                        CAREER OPPORTUNITIES
+                       OPPORTUNITIES
                     </span>
 
                     <h2>
-                        Find Your Place in <span>Our Team</span>
+                       Find the<span> Role </span>That Fits You Best
                     </h2>
 
                     <p>
@@ -195,7 +196,7 @@ function Career() {
                         committed to quality, innovation, and making a
                         difference in healthcare.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="career-results">
                     <div className="career-results-heading">

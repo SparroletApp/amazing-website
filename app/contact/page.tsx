@@ -78,7 +78,9 @@ function ContactUs() {
         <section className="contact">
             <div className="contact-header">
                 <div className="container">
-                    <h1>Get In Touch</h1>
+
+                    <div className="let-connect">LET'S CONNECT</div>
+                    <h1>Connect With Our Team to Discuss Your Needs</h1>
                     <p>
                         Have questions or want to discuss a project? Reach out
                         to us and our team will get back to you promptly.
@@ -173,7 +175,6 @@ function ContactUs() {
                                     <i className="bi bi-send-fill"></i>
                                     <span>Send Us a Message</span>
                                 </h2>
-
                                 <form
                                     className="contact-form"
                                     onSubmit={handleContactSubmit}

@@ -55,13 +55,13 @@ function Certificates() {
 
     return (
         <section className="certificates">
-            <div className="about-header">
+            <div className="aboutes-headers">
                 <div className="container">
-                    <div className="about-small">
+                    <div className="abouts-small">
                         Quality Compliance
                     </div>
 
-                    <h1>Internationally Certified Standards</h1>
+                    <h1>Committed to Excellence in Medical Glove Manufacturing</h1>
 
                     <p>
                         Our gloves are CE, US-FDA, ISO 13485:2016, and GMP

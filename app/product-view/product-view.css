@@ -93,9 +93,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    height: 400px;
     margin: 20px 0;
-    padding: 20px;
     border-radius: 16px;
     background: linear-gradient(145deg, #f4f9fa, #ffffff);
 }
@@ -103,9 +102,9 @@
 .product-view-image img {
     display: block;
     width: 100%;
-    max-width: 450px;
-    max-height: 430px;
-    object-fit: contain;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-view-image-footer {

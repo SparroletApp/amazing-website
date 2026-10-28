@@ -27,7 +27,7 @@ function Certifications(){
                         <i className="bi bi-patch-check-fill"></i>
                     </div>
                     <div className="green-card-content">
-                        <h3>ISO<br />13485:2016</h3>
+                        <h3>ISO 13485:2016</h3>
                         <p>Certified</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ function Certifications(){
                         <i className="bi bi-award-fill"></i>
                     </div>
                     <div className="green-card-content">
-                        <h3>FDA<br />510(k)</h3>
+                        <h3>FDA 510(k)</h3>
                         <p>Cleared</p>
                     </div>
                 </div>

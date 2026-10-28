@@ -10,20 +10,36 @@
 }
 
 .explore-about {
+    overflow: hidden;
     background-color: #004D4D;
     padding: 70px 0px;
+    position: relative;
+}
+
+
+
+.explore-about::before {
+    content: "";
+    border: 1px solid #65e0d038;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    box-shadow: 0 0 0 45px #65e0d00a, 0 0 0 90px #65e0d006;
 }
 
 .about-right {
     color: white;
 }
 
-.about-right h1{
-    font-weight: 600;
+.about-right h1 {
+    font-weight: 700;
     margin-bottom: 25px;
 }
 
-.about-right p{
+.about-right p {
     color: rgb(236, 233, 233);
     margin-bottom: 30px;
     font-size: 16px;
@@ -35,30 +51,62 @@
     justify-content: center;
 }
 
-.explore-btn button{
+.explore-btn button {
     background-color: white;
     color: #004d4d;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 16px;
-    padding: 7px 20px;
+    padding: 10px 20px;
     font-weight: 700;
     border: none;
 }
 
-@media(max-width:960px){
-    .explore-about .row{
+@media(max-width:960px) {
+    .explore-about .row {
         display: flex;
         flex-direction: column-reverse;
     }
-    .explore-about{
+
+    .explore-about {
         padding: 30px;
     }
 
-    .about-right{
+    .about-right {
         padding-bottom: 30px;
     }
 
-    .about-img{
-        height: 300px;
+    .about-img {
+        height: 250px;
+    }
+
+    .about-badge {
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .trusted-partner h1 {
+        font-size: 20px;
+    }
+
+    .trusted-desc {
+        font-size: 14px !important;
+    }
+
+    .about-right h1 {
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .about-right h1 br {
+        display: none;
+    }
+
+    .about-right p {
+        font-size: 14px;
+    }
+
+    .explore-btn button {
+        font-size: 14px;
+        padding: 7px 14px;
     }
 }

@@ -116,12 +116,13 @@ function Products() {
                                 <span>SAFE N CARE</span>
                             </div>
 
-                            <div className="products-catalogue-badge">
-                                <i className="bi bi-check-circle-fill"></i>
-                                Batchwise 4-Category Master Catalogue
-                            </div>
+                           
                         </div>
                     </div>
+                </div>
+
+                <div className="products-hero-image">
+                    <img src="/product-gloves.jpg" alt="Medical surgical gloves" />
                 </div>
             </div>
 
@@ -158,11 +159,10 @@ function Products() {
                                 <button
                                     type="button"
                                     key={category}
-                                    className={`products-category-button ${
-                                        activeCategory === category
+                                    className={`products-category-button ${activeCategory === category
                                             ? "active"
                                             : ""
-                                    }`}
+                                        }`}
                                     onClick={() =>
                                         setActiveCategory(category)
                                     }
@@ -234,7 +234,8 @@ function Products() {
                                         className={`products-card ${style.color}`}
                                         key={product.id}
                                     >
-                                        <div className="products-card-top">
+                                    
+                                        
                                             <span className="products-card-label">
                                                 {style.label}
                                             </span>
@@ -242,16 +243,12 @@ function Products() {
                                             <span className="products-card-number">
                                                 Cat. 0{product.id}
                                             </span>
-                                        </div>
+                                              
 
                                         <div className="products-card-visual">
-                                            <div className="products-card-icon">
-                                                <i
-                                                    className={`bi ${style.icon}`}
-                                                ></i>
-                                            </div>
+                                        
+<img src={product.image}></img>
 
-                                          
                                         </div>
 
                                         <div className="products-card-content">

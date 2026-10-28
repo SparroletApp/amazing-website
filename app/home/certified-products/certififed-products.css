@@ -236,24 +236,27 @@
         max-width: none;
     }
 
-    .certified-products-column{
+    .certified-products-column {
         padding-bottom: 30px;
     }
 
     .certified-products-heading h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
-    .certified-products
-{
-    padding: 20px 10px;
-}
+    .certified-products-heading p br {
+        display: none;
+    }
 
-.certified-products-heading p br{
-    display: none;
-}
+    .certified-products {
+        padding: 20px 10px;
+    }
 
-.certified-products-heading p {
-    font-size: 14px;
-}
+    .certified-products-heading p br {
+        display: none;
+    }
+
+    .certified-products-heading p {
+        font-size: 14px;
+    }
 }
