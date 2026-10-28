@@ -281,7 +281,7 @@
 .resources-faq-question.active .resources-faq-arrow {
     color: #ffffff;
     background-color: var(--resources-teal);
-    transform: rotate(45deg);
+
 }
 
 
