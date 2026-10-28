@@ -2,7 +2,6 @@
     width: 100%;
     background: #ffffff;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .certified-standard *,
@@ -52,9 +51,6 @@
 
 .standard-card:hover {
     transform: translateY(-6px);
-    box-shadow:
-        0 12px 28px rgba(10, 46, 57, 0.10),
-        0 25px 50px rgba(10, 46, 57, 0.07);
 }
 
 

@@ -264,7 +264,6 @@
     margin: 0;
 }
 
-/* Apply button */
 
 .career-apply-button {
     flex-shrink: 0;
@@ -293,7 +292,6 @@
     font-size: 16px;
 }
 
-/* Bottom contact banner */
 
 .career-bottom {
     display: flex;
@@ -386,7 +384,6 @@
     animation: careerModalAppear 0.3s ease;
 }
 
-/* Popup header */
 
 .career-modal-header {
     display: flex;
@@ -422,7 +419,6 @@
     line-height: 1.7;
 }
 
-/* Close button */
 
 .career-modal-close {
     display: flex;
@@ -446,7 +442,7 @@
     color: #FFFFFF;
 }
 
-/* Popup form */
+
 
 .career-form {
     padding: 28px 30px 30px;
@@ -480,7 +476,7 @@
     color: #D94B4B;
 }
 
-/* Input fields */
+
 
 .career-input-wrapper {
     display: flex;
@@ -516,7 +512,6 @@
     outline: none;
     background: transparent;
     color: #0A2E39;
-    font-family: inherit;
     font-size: 13px;
 }
 
@@ -528,7 +523,6 @@
     cursor: pointer;
 }
 
-/* Automatically selected job position */
 
 .career-position-input {
     background: #EAF5F2;
@@ -541,7 +535,6 @@
     cursor: default;
 }
 
-/* Message textarea */
 
 .career-form-group textarea {
     width: 100%;
@@ -553,7 +546,6 @@
     resize: vertical;
     background: #FFFFFF;
     color: #0A2E39;
-    font-family: inherit;
     font-size: 13px;
     line-height: 1.7;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -568,7 +560,6 @@
     box-shadow: 0 0 0 3px rgba(8, 124, 120, 0.10);
 }
 
-/* Privacy note */
 
 .career-form-note {
     display: flex;
@@ -585,7 +576,6 @@
     font-size: 15px;
 }
 
-/* Form action buttons */
 
 .career-form-actions {
     display: flex;
@@ -602,7 +592,6 @@
     border-radius: 7px;
     background: #FFFFFF;
     color: #52676D;
-    font-family: inherit;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
@@ -624,11 +613,16 @@
     border-radius: 7px;
     background: #087C78;
     color: #FFFFFF;
-    font-family: inherit;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+.about-career-header .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .career-submit-button:hover {

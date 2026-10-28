@@ -57,8 +57,13 @@ function Certificates() {
         <section className="certificates">
             <div className="aboutes-headers">
                 <div className="container">
-                    <div className="abouts-small">
-                        Quality Compliance
+                    <div className="products-breadcrumb">
+                        <span>Home</span>
+                        <i className="bi bi-chevron-right"></i>
+                        <span>Certificates</span>
+                    </div>
+                    <div className="products-eyebrow">
+                        QUALITY COMPLIANCE
                     </div>
 
                     <h1>Committed to Excellence in Medical Glove Manufacturing</h1>

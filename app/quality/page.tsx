@@ -182,12 +182,17 @@ function Quality() {
     return (
         <main className="quality-page">
 
-            {/* HERO SECTION */}
             <section className="quality-hero">
                 <div className="container quality-container quality-hero-grid">
+
                     <div className="quality-hero-text">
-                        <p className="quality-eyebrow">
-                            <span className="quality-eyebrow-line"></span>
+                        <div className="products-breadcrumb">
+                            <span>Home</span>
+                            <i className="bi bi-chevron-right"></i>
+                            <span>Quality</span>
+                        </div>
+                        <p className="products-eyebrow">
+                            
                             OUR COMMITMENT TO EXCELLENCE
                         </p>
 
@@ -210,7 +215,6 @@ function Quality() {
                         />
 
                         <div className="quality-image-badge">
-                            <span className="quality-badge-check">✓</span>
                             <div>
                                 <strong>Quality Comes First</strong>
                                 <p>Care at every stage</p>
@@ -255,8 +259,6 @@ function Quality() {
                     </div>
                 </div>
             </section>
-
-            {/* QUALITY SECTIONS — STERILIZATION HAS ITS OWN DESIGN */}
             {qualitySections.map((section, index) => (
                 section.id === "sterilization" ? (
                     <section
@@ -399,20 +401,18 @@ function Quality() {
                     </section>
                 ) : (
                     <section
-                        className={`quality-detail-section ${
-                            index % 2 === 0
+                        className={`quality-detail-section ${index % 2 === 0
                                 ? "quality-detail-light"
                                 : "quality-detail-white"
-                        }`}
+                            }`}
                         id={section.id}
                         key={section.id}
                     >
                         <div
-                            className={`container quality-container quality-detail-grid ${
-                                section.imagePosition === "right"
+                            className={`container quality-container quality-detail-grid ${section.imagePosition === "right"
                                     ? "quality-image-right"
                                     : ""
-                            }`}
+                                }`}
                         >
                             <div className="quality-detail-image">
                                 <img

@@ -1,5 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
 
-body{
-  margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.products-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #a8c0c5;
+}
+
+.products-breadcrumb span:last-child {
+    color: #ffffff;
+}
+
+.products-breadcrumb i {
+    font-size: 9px;
+}
+
+
+.products-eyebrow {
+    display: inline-block;
+    color: #67E8F9;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+@media(max-width:767px){
+  
+    .products-eyebrow {
+        font-size: 10px;
+    }
 }

@@ -64,7 +64,6 @@ function Header() {
                     <img src="/logo.png" alt="Company Logo" />
                 </Link>
 
-                {/* Desktop navigation */}
                 <nav className="landing-nav">
                     {navLinks.map((link) => (
                         <Link
@@ -77,7 +76,6 @@ function Header() {
                     ))}
                 </nav>
 
-                {/* Desktop quote button */}
                 <button
                     type="button"
                     className="quote-button desktop-quote-button"
@@ -87,7 +85,6 @@ function Header() {
                     Request Quote
                 </button>
 
-                {/* Mobile hamburger button */}
                 <button
                     type="button"
                     className="mobile-menu-toggle"
@@ -103,7 +100,6 @@ function Header() {
                 </button>
             </header>
 
-            {/* Mobile menu */}
             {mobileMenuOpen && (
                 <div
                     className="mobile-menu-overlay"
@@ -144,7 +140,6 @@ function Header() {
                 </div>
             )}
 
-            {/* Enquiry modal */}
             {showEnquiry && (
                 <div
                     className="enquiry-modal-overlay"
