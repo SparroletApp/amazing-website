@@ -116,12 +116,13 @@ function Products() {
                                 <span>SAFE N CARE</span>
                             </div>
 
-                            <div className="products-catalogue-badge">
-                                <i className="bi bi-check-circle-fill"></i>
-                                Batchwise 4-Category Master Catalogue
-                            </div>
+                           
                         </div>
                     </div>
+                </div>
+
+                <div className="products-hero-image">
+                    <img src="/product-gloves.jpg" alt="Medical surgical gloves" />
                 </div>
             </div>
 
@@ -158,11 +159,10 @@ function Products() {
                                 <button
                                     type="button"
                                     key={category}
-                                    className={`products-category-button ${
-                                        activeCategory === category
+                                    className={`products-category-button ${activeCategory === category
                                             ? "active"
                                             : ""
-                                    }`}
+                                        }`}
                                     onClick={() =>
                                         setActiveCategory(category)
                                     }
@@ -251,7 +251,7 @@ function Products() {
                                                 ></i>
                                             </div>
 
-                                          
+
                                         </div>
 
                                         <div className="products-card-content">

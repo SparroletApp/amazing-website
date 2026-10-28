@@ -33,8 +33,8 @@
 .manufacture-tour-heading h2 {
     margin: 0 0 9px;
     color: #10333d;
-    font-size: 30px;
-    font-weight: 750;
+    font-size: 42px;
+    font-weight: 700;
     text-align: center;
     line-height: 1.22;
     letter-spacing: -0.10px;
@@ -46,7 +46,7 @@
     color: #7c8da7;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
 }
@@ -150,11 +150,11 @@
 
 
 .manufacture-tour-features {
-display: flex;
+    display: flex;
     align-items: center;
     max-width: 850px;
     padding: 40px 0px;
-        margin: 0px auto;
+    margin: 0px auto;
     justify-content: space-between;
 }
 
@@ -204,34 +204,47 @@ display: flex;
 }
 
 
-@media(max-width:960px){
-    .manufacture-tour{
+@media(max-width:960px) {
+    .manufacture-tour {
         padding: 40px 20px;
     }
 
-    .manufacture-tour-heading h2 br{
+    .manufacture-tour-heading h2 br {
         display: none;
     }
 
     .manufacture-tour-heading h2 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .manufacture-tour-eyebrow {
+        font-size: 11px;
+    }
+
+    .manufacture-tour-heading h2 {
+        line-height: 1.42;
     }
 
     .manufacture-tour-heading p {
         margin-bottom: 30px;
+        font-size: 14px;
     }
 
-    .manufacture-tour-features{
+    .manufacture-tour-video-wrapper {
+        height: 350px;
+    }
+
+    .manufacture-tour-features {
         flex-direction: column;
         gap: 20px;
     }
 
-    .manufacture-tour-feature-card{
+    .manufacture-tour-feature-card {
         width: 100%;
         justify-content: center;
     }
 
-    .manufacture-tour-features{
+    .manufacture-tour-features {
         padding-bottom: 0px;
     }
 }

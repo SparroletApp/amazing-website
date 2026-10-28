@@ -21,14 +21,27 @@ function AboutUs() {
     return (
         <>
             <section className="aboutus">
+
                 <div className="about-header">
-                    <div className="container">
+                    <div className="about-header-image"></div>
+                    <div className="about-header-overlay"></div>
+
+                    <div className="container about-header-content">
                         <div className="about-small">
                             ABOUT US
                         </div>
-                        <h1>Get to Know The Top Manufacturer of Surgical Gloves in India</h1>
+
+                        <h1>
+                            Get to Know The Top Manufacturer of <br/>Surgical Gloves in India
+                        </h1>
+
+                        <p>
+                            Delivering trusted protection through quality, innovation,
+                            and excellence in medical glove manufacturing.
+                        </p>
                     </div>
                 </div>
+
                 <div className="container">
                     <div className="about-first">
                         <div className="row">
@@ -73,7 +86,7 @@ function AboutUs() {
 
                     <div className="our-story">
                         <div className="row">
-                            <div className="col-lg-6 col-md-6 col-12 manage-role">
+                            <div className="col-lg-7 col-md-7 col-12 manage-role">
                                 <div className="manager">
                                     <div className="shield-mark">
                                         From The Managing Director's Desk

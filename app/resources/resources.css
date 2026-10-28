@@ -4,26 +4,76 @@
     color: #082f38;
 }
 
-
 .resources-header {
-    background-color: #082f38;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: linear-gradient(120deg,
+            #062f39 0%,
+            #0a414c 60%,
+            #08716f 100%);
     color: #ffffff;
     text-align: center;
-    padding: 40px 20px 34px;
+    padding: 80px 20px 80px;
 }
 
+.resources-header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+
+    background-image:
+        linear-gradient(to right,
+            #0a414c 0%,
+            rgba(10, 65, 76, 0.75) 22%,
+            rgba(10, 65, 76, 0.2) 65%,
+            rgba(8, 113, 111, 0.15) 100%),
+        linear-gradient(to top,
+            rgba(6, 47, 57, 0.35),
+            transparent 65%),
+        url("/resources.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.75;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.resources-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+
 .resources-header h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 46px;
+    text-align: left;
     font-weight: 700;
     line-height: 1.3;
+}
+
+.discover-small {
+    color: #e6f3f3;
+    text-align: left;
+    letter-spacing: .07cm;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .resources-header p {
     margin: 0;
     color: #d0dfe1;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.7;
+    text-align: left;
 }
 
 
@@ -40,14 +90,15 @@
 
 .resources-heading h2 {
     color: #082f38;
-    font-size: 30px;
+    font-size: 42px;
     font-weight: 700;
     margin: 0 0 8px;
 }
 
 .resources-heading p {
     color: #77868b;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.7;
     margin: 0 auto;
     max-width: 490px;
@@ -113,7 +164,7 @@
     background-color: #ffffff;
     color: #163b44;
     text-align: left;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     transition: color 0.2s ease;
@@ -137,8 +188,8 @@
 .resources-faq-answer p {
     margin: 0;
     color: #718187;
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 @media (max-width: 991px) {
@@ -175,7 +226,7 @@
     }
 
     .resources-header p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .resources-gallery {
@@ -188,15 +239,24 @@
     }
 
     .resources-heading h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .resources-heading p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .resources-gallery-grid {
         row-gap: 10px;
+    }
+
+
+    .discover-small {
+        font-size: 10px !important;
+    }
+
+    .resources-header h1 {
+        margin-bottom: 9px;
     }
 
     .resources-gallery-card {
@@ -204,7 +264,7 @@
     }
 
     .resources-faq {
-        padding: 28px 0 32px;
+        padding: 20px 0 32px;
     }
 
     .resources-faq .resources-heading {
@@ -213,7 +273,7 @@
 
     .resources-faq-question {
         padding: 11px 10px;
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .resources-faq-answer {
@@ -221,6 +281,6 @@
     }
 
     .resources-faq-answer p {
-        font-size: 11px;
+        font-size: 12px;
     }
 }

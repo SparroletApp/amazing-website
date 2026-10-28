@@ -77,14 +77,18 @@ function Resources() {
     return (
         <main className="resources">
             <section className="resources-header">
-                <div className="container">
-                    <h1>Resources &amp; Factory Gallery</h1>
+                <div className="resources-header-image" aria-hidden="true"></div>
+
+                <div className="container resources-header-content">
+                    <div className="discover-small">EXPLORE OUR FACILITY</div>
+                    <h1>Discover Our Advanced Surgical Gloves <br/>Manufacturing</h1>
                     <p>
                         Discover our manufacturing facility at Cochin Special
                         Economic Zone (CSEZ).
                     </p>
                 </div>
             </section>
+
             <section className="resources-gallery">
                 <div className="container">
                     <div className="resources-heading">
@@ -127,9 +131,8 @@ function Resources() {
                     <div className="resources-faq-list">
                         {faqs.map((faq, index) => (
                             <div
-                                className={`resources-faq-item ${
-                                    activeFaq === index ? "active" : ""
-                                }`}
+                                className={`resources-faq-item ${activeFaq === index ? "active" : ""
+                                    }`}
                                 key={faq.question}
                             >
                                 <button
@@ -144,11 +147,10 @@ function Resources() {
                                 >
                                     <span>{faq.question}</span>
                                     <i
-                                        className={`bi ${
-                                            activeFaq === index
+                                        className={`bi ${activeFaq === index
                                                 ? "bi-x"
                                                 : "bi-plus"
-                                        }`}
+                                            }`}
                                         aria-hidden="true"
                                     />
                                 </button>

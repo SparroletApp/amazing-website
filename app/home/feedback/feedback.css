@@ -1,6 +1,7 @@
 .feedback h1 {
     text-align: center;
     font-weight: 700;
+    font-size: 42px;
     margin-bottom: 40px;
 }
 
@@ -24,7 +25,7 @@
     align-items: center;
 }
 
-.feedback-card-letter{
+.feedback-card-letter {
     background-color: #E6F3F3;
     color: #026666;
     font-weight: 700;
@@ -32,19 +33,20 @@
     border-radius: 50%;
 }
 
-.feedback-card-name{
+.feedback-card-name {
     margin-bottom: 0px;
-   color:  #0A2E39;
-   font-weight: 700;
+    color: #0A2E39;
+    font-weight: 700;
 }
 
-.feedback-card-designation{
+.feedback-card-designation {
     color: #64748B;
 }
 
-.feedback-card-designation{
+.feedback-card-designation {
     margin-bottom: 0px;
 }
+
 .feedback-card p {
     color: #64748B;
     font-size: 15px;
@@ -56,10 +58,8 @@
     min-height: 220px;
 
     background:
-        linear-gradient(
-            rgba(6, 35, 43, 0.82),
-            rgba(6, 35, 43, 0.82)
-        ),
+        linear-gradient(rgba(6, 35, 43, 0.82),
+            rgba(6, 35, 43, 0.82)),
         url("/bottom-footer.jpg");
 
     background-size: cover;
@@ -72,14 +72,15 @@
     background-repeat: no-repeat;
 }
 
-.carere-build h1{
+.carere-build h1 {
     color: white;
     font-weight: 700;
+    font-size: 42px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.btn-openings button{
+.btn-openings button {
     background-color: white;
     color: #004D4D;
     border: none;
@@ -89,31 +90,38 @@
     border-radius: 20px;
 }
 
-@media(max-width:960px){
+@media(max-width:960px) {
     .feedback h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 25px;
-            }
+    }
 
-            .feedback .row{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
+    .feedback .row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-            .feedback{
-                padding: 40px 20px;
-            }
+    .feedback {
+        padding: 40px 20px;
+    }
 
-            .carere-build h1{
-                font-size: 25px;
-            }
+    .carere-build {
+        min-height: 140px;
+    }
 
-            .btn-openings button {
-                font-size: 13px;
-            }
-}
+    .carere-build h1 {
+        font-size: 25px;
+    }
 
-.carere-build{
-    min-height: 160px;
+    .feedback-card p{
+        font-size: 14px;
+    }
+
+    .feedback-card-customer h5{
+        font-size: 16px;
+    }
+    .btn-openings button {
+        font-size: 13px;
+    }
 }
