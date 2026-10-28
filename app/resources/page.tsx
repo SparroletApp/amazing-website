@@ -77,7 +77,7 @@ function Resources() {
 
     return (
         <main className="resources">
-            {/* Header */}
+    
             <section className="resources-header">
                 <div
                     className="resources-header-image"
@@ -108,7 +108,7 @@ function Resources() {
                 </div>
             </section>
 
-            {/* Gallery */}
+    
             <section className="resources-gallery">
                 <div className="container">
                     <div className="resources-heading">
