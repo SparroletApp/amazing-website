@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "My Website",
+    title: "Amazing Website",
     description: "Welcome to my website",
 };
 
