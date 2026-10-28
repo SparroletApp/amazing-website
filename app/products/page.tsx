@@ -234,7 +234,8 @@ function Products() {
                                         className={`products-card ${style.color}`}
                                         key={product.id}
                                     >
-                                        <div className="products-card-top">
+                                    
+                                        
                                             <span className="products-card-label">
                                                 {style.label}
                                             </span>
@@ -242,15 +243,11 @@ function Products() {
                                             <span className="products-card-number">
                                                 Cat. 0{product.id}
                                             </span>
-                                        </div>
+                                              
 
                                         <div className="products-card-visual">
-                                            <div className="products-card-icon">
-                                                <i
-                                                    className={`bi ${style.icon}`}
-                                                ></i>
-                                            </div>
-
+                                        
+<img src={product.image}></img>
 
                                         </div>
 
