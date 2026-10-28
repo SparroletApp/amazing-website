@@ -679,9 +679,22 @@ padding: 2px 5px;
     border-radius: 12px;
     background: linear-gradient(115deg, #07586a, #06343c);
     color: #ffffff;
+    position: relative;
     box-shadow: 0 5px 12px rgb(5 52 60 / 13%);
 }
 
+
+.products-packaging::before{
+    content: "";
+    border: 1px solid #65e0d038;
+    border-radius: 50%;
+    width: 450px;
+    height: 340px;
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    box-shadow: 0 0 0 45px #65e0d00a, 0 0 0 90px #65e0d006;
+}
 .products-packaging-content {
     min-width: 0;
     flex: 1;

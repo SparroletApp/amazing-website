@@ -65,10 +65,20 @@
 .certificate-card {
     background-color: white;
     padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s ease;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 25px;
 }
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(10, 46, 57, 0.12);
+    border-color: rgba(2, 102, 102, 0.4);
+}
+
 
 .certificate-icon {
     color: #026666;

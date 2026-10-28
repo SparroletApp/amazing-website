@@ -43,14 +43,21 @@
     min-width: 0;
     overflow: hidden;
     border-radius: 19px;
-    transition: box-shadow 0.4s ease;
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(10, 46, 57, 0);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
-
 
 .standard-card:hover {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12),
-                0 20px 45px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 28px rgba(10, 46, 57, 0.10),
+        0 25px 50px rgba(10, 46, 57, 0.07);
 }
+
+
 .standard-card img {
     display: block;
     width: 100%;
@@ -200,24 +207,24 @@
 
 
 
-@media(max-width:767px){
-    .standard-card-purity{
+@media(max-width:767px) {
+    .standard-card-purity {
         height: 200px;
     }
 
-    .standard-card-lab{
+    .standard-card-lab {
         height: 200px;
     }
 
-    .standard-card-overlay{
+    .standard-card-overlay {
         height: 200px;
     }
 
-    .standard-card-research{
+    .standard-card-research {
         height: 200px;
     }
 
-    .standard-card-deliveries{
+    .standard-card-deliveries {
         height: 200px;
     }
 }

@@ -10,8 +10,24 @@
 }
 
 .explore-about {
+    overflow: hidden;
     background-color: #004D4D;
     padding: 70px 0px;
+    position: relative;
+}
+
+
+
+.explore-about::before {
+    content: "";
+    border: 1px solid #65e0d038;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    box-shadow: 0 0 0 45px #65e0d00a, 0 0 0 90px #65e0d006;
 }
 
 .about-right {
@@ -68,7 +84,7 @@
         margin-bottom: 5px !important;
     }
 
-    .trusted-partner h1{
+    .trusted-partner h1 {
         font-size: 20px;
     }
 
@@ -76,12 +92,12 @@
         font-size: 14px !important;
     }
 
-    .about-right h1{
+    .about-right h1 {
         font-size: 20px;
         line-height: 1.45;
     }
 
-    .about-right h1 br{
+    .about-right h1 br {
         display: none;
     }
 
