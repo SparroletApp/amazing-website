@@ -56,6 +56,7 @@ function Header() {
     return (
         <>
             <header className="landing-header">
+                <div className="container">
                 <Link
                     href="/"
                     className="landing-logo"
@@ -98,6 +99,7 @@ function Header() {
                         }`}
                     ></i>
                 </button>
+                </div>
             </header>
 
             {mobileMenuOpen && (

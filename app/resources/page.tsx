@@ -6,35 +6,35 @@ import "./resources.css";
 
 const galleryImages = [
     {
-        src: "/image1.png",
+        src: "/resources1.jpeg",
         alt: "Microscopic virus research",
     },
     {
-        src: "/image2.png",
+        src: "/resources2.jpeg",
         alt: "Medical equipment and stethoscope",
     },
     {
-        src: "/image3.png",
+        src: "/resources3.jpeg",
         alt: "Glove manufacturing process",
     },
     {
-        src: "/image4.png",
+        src: "/resources4.jpeg",
         alt: "Medical bottles and healthcare supplies",
     },
     {
-        src: "/image5.png",
+        src: "/resources5.jpeg",
         alt: "Modern hospital room",
     },
     {
-        src: "/image6.png",
+        src: "/resources6.jpeg",
         alt: "Manufacturing facility interior",
     },
     {
-        src: "/image7.png",
+        src: "/resources7.jpeg",
         alt: "Medical glove quality testing",
     },
     {
-        src: "/image8.png",
+        src: "/resources8.jpeg",
         alt: "Factory production line",
     },
 ];
@@ -225,17 +225,7 @@ function Resources() {
 
                                     <p>{faqs[activeFaq].answer}</p>
 
-                                    <div className="resources-faq-answer-footer">
-                                        <i
-                                            className="bi bi-check-circle"
-                                            aria-hidden="true"
-                                        />
-
-                                        <span>
-                                            Need more information? Contact our team
-                                            for assistance.
-                                        </span>
-                                    </div>
+                                    
                                 </>
                             )}
                         </div>

@@ -4,13 +4,13 @@ function CertifiedStandard() {
     return (
         <section className="certified-standard">
             <div className="container certified-standard-container">
-                <div className="certified-standard-heading">
+                {/* <div className="certified-standard-heading">
                     <h2>Internationally Certified Standards</h2>
                     <p>
                         Our gloves are CE, US-FDA, and ISO certified, ensuring
                         the highest standards of safety and quality.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="certified-standard-grid">
                     <div className="certified-standard-column certified-standard-column-left">
