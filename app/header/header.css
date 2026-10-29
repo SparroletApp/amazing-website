@@ -2,7 +2,6 @@
 .landing-header {
     width: 100%;
     min-height: 74px;
-    padding: 0 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,6 +9,12 @@
     background: #f8fbfb;
     position: relative;
     z-index: 5;
+}
+
+.landing-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .landing-logo {
@@ -235,11 +240,11 @@
     .landing-header {
         position: relative;
         z-index: 1001;
+        padding: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 12px;
-        padding: 12px 18px;
     }
 
     .landing-logo {
@@ -284,9 +289,6 @@
 }
 
 @media (max-width: 380px) {
-    .landing-header {
-        padding: 10px 14px;
-    }
 
     .landing-logo img {
         max-width: 145px;

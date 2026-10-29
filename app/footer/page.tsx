@@ -48,7 +48,7 @@ function Footer() {
                 <div className="footer-main">
                     <div className="footer-column footer-company">
                         <Link href="/" className="footer-brand">
-                          <img src="/logo.png"></img>
+                          <img src="/white-logo.png"></img>
                         </Link>
 
                         <p className="footer-company-description">
@@ -59,7 +59,7 @@ function Footer() {
 
                         <div className="footer-socials">
                             <a
-                                href="https://www.linkedin.com/"
+                                href="https://www.linkedin.com/company/amazing-rubber-products-pvt-ltd/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
@@ -68,7 +68,7 @@ function Footer() {
                             </a>
 
                             <a
-                                href="https://www.facebook.com/"
+                                href="https://www.facebook.com/people/Amazing-Rubber-Products-Private-Limited/61551572092311/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Facebook"
@@ -77,7 +77,7 @@ function Footer() {
                             </a>
 
                             <a
-                                href="https://www.instagram.com/"
+                               href="https://www.instagram.com/amazing_rubber_products/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram"
